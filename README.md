@@ -241,18 +241,3 @@ You've made too many requests. Wait a few minutes before trying again.
 1. Make sure you're signed in
 2. Check that the transaction is on a supported chain
 3. Try refreshing MetaMask
-
-## Support
-
-- **Documentation**: [docs.txfort.com](https://docs.txfort.com)
-- **Email**: support@txfort.com
-- **Discord**: [discord.gg/txfort](https://discord.gg/txfort)
-- **Twitter**: [@txfort](https://twitter.com/txfort)
-
-## License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details.
