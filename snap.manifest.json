@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "description": "Analyze blockchain transactions before signing. Get decoded parameters, security warnings, and human-readable descriptions for Ethereum, Polygon, and BSC transactions.",
+  "proposedName": "TxFort Transaction Insights",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/txfort/txfort-snap.git"
+  },
+  "source": {
+    "shasum": "kKYnIVAtwAeA4SfP6+LB1X4C1aKghnDcqhZm3fpaor8=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "public/icon.svg",
+        "packageName": "@txfort/snap",
+        "registry": "https://registry.npmjs.org"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:rpc": {
+      "dapps": true,
+      "snaps": false
+    },
+    "endowment:transaction-insight": {
+      "allowTransactionOrigin": true
+    },
+    "endowment:ethereum-provider": {},
+    "endowment:network-access": {},
+    "snap_manageState": {},
+    "snap_dialog": {}
+  },
+  "platformVersion": "6.24.0",
+  "manifestVersion": "0.1"
+}

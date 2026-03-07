@@ -1,0 +1,72 @@
+{
+  "name": "@txfort/snap",
+  "version": "1.0.0",
+  "description": "TxFort Transaction Insights - Analyze blockchain transactions before signing",
+  "keywords": [
+    "metamask",
+    "snap",
+    "blockchain",
+    "transaction",
+    "analysis",
+    "security"
+  ],
+  "homepage": "https://txfort.com",
+  "bugs": {
+    "url": "https://github.com/txfort/txfort-snap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/txfort/txfort-snap.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "TxFort Team",
+    "email": "support@txfort.com"
+  },
+  "main": "dist/bundle.js",
+  "files": [
+    "dist/",
+    "images/",
+    "snap.manifest.json"
+  ],
+  "scripts": {
+    "build": "mm-snap build",
+    "build:clean": "yarn clean && yarn build",
+    "clean": "rimraf dist",
+    "lint": "eslint . --cache --ext js,ts",
+    "lint:fix": "yarn lint --fix",
+    "serve": "mm-snap serve",
+    "start": "mm-snap watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "yarn build:clean",
+    "dev": "mm-snap watch"
+  },
+  "dependencies": {
+    "@metamask/snaps-sdk": "^6.4.0",
+    "viem": "^2.46.3"
+  },
+  "devDependencies": {
+    "@metamask/snaps-cli": "^6.4.0",
+    "@metamask/utils": "^9.1.0",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.4",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

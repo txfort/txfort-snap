@@ -1,0 +1,31 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern shield/fort logo with teal gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main shield shape -->
+  <path 
+    d="M16 3L4 8V14C4 21.73 9.11 28.76 16 30C22.89 28.76 28 21.73 28 14V8L16 3Z" 
+    fill="url(#logoGradient)"
+  />
+  
+  <!-- Inner fort/transaction symbol -->
+  <path 
+    d="M10 12H22M10 16H22M10 20H18" 
+    stroke="white" 
+    stroke-width="2" 
+    stroke-linecap="round"
+    opacity="0.9"
+  />
+  
+  <!-- Accent dot representing security/verification -->
+  <circle cx="22" cy="20" r="2.5" fill="url(#accentGradient)"/>
+</svg>
