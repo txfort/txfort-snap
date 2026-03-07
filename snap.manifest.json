@@ -25,7 +25,6 @@
     "endowment:transaction-insight": {
       "allowTransactionOrigin": true
     },
-    "endowment:ethereum-provider": {},
     "endowment:network-access": {},
     "snap_manageState": {},
     "snap_dialog": {}
