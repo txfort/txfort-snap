@@ -31,16 +31,16 @@
   ],
   "scripts": {
     "build": "mm-snap build",
-    "build:clean": "yarn clean && yarn build",
+    "build:clean": "npm run clean && npm run build",
     "clean": "rimraf dist",
     "lint": "eslint . --cache --ext js,ts",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "npm run lint -- --fix",
     "serve": "mm-snap serve",
     "start": "mm-snap watch",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "prepublishOnly": "yarn build:clean",
+    "prepublishOnly": "npm run build:clean",
     "dev": "mm-snap watch"
   },
   "dependencies": {

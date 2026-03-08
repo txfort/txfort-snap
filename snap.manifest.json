@@ -7,7 +7,7 @@
     "url": "https://github.com/txfort/txfort-snap.git"
   },
   "source": {
-    "shasum": "kKYnIVAtwAeA4SfP6+LB1X4C1aKghnDcqhZm3fpaor8=",
+    "shasum": "r8INbUZkNH8SyZjORBj6oBuRTAf2hlTd4KObra5WY+A=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",

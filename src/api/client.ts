@@ -3,20 +3,21 @@
  * Handles all HTTP requests to the TxFort backend
  */
 
-import type { 
-  ApiConfig, 
-  AuthResponse, 
-  LoginRequest, 
+import type {
+  ApiConfig,
+  AuthResponse,
+  LoginRequest,
   SignupRequest,
   ApiKeyResponse,
   AnalyzeRequest,
   TransactionAnalysis,
-  ApiError 
+  ApiError
 } from '../types';
 
 // Default configuration
 const DEFAULT_CONFIG: ApiConfig = {
-  baseUrl: 'http://localhost:3000',
+  // TODO: Verify this is your actual production API URL
+  baseUrl: 'https://api.txfort.com',
   timeout: 30000,
 };
 
@@ -51,7 +52,7 @@ async function request<T>(
   const { method = 'GET', body, headers = {}, apiKey } = options;
 
   const url = `${config.baseUrl}${endpoint}`;
-  
+
   const requestHeaders: Record<string, string> = {
     'Content-Type': 'application/json',
     ...headers,
@@ -94,7 +95,7 @@ async function request<T>(
     if ((error as ApiError).status) {
       throw error;
     }
-    
+
     // Network or other errors
     throw {
       status: 0,
