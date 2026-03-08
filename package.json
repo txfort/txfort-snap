@@ -1,6 +1,6 @@
 {
   "name": "@txfort/snap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TxFort Transaction Insights - Analyze blockchain transactions before signing",
   "keywords": [
     "metamask",
@@ -26,7 +26,7 @@
   "main": "dist/bundle.js",
   "files": [
     "dist/",
-    "images/",
+    "public/",
     "snap.manifest.json"
   ],
   "scripts": {
