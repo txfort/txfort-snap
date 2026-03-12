@@ -1,13 +1,13 @@
 {
-  "version": "1.0.2",
-  "description": "Analyze blockchain transactions before signing. Get decoded parameters, security warnings, and human-readable descriptions for Ethereum, Polygon, and BSC transactions.",
-  "proposedName": "TxFort Transaction Insights",
+  "version": "1.0.3",
+  "description": "Secure your blockchain interactions with TxFort. Get real-time transaction analysis, safety warnings, and clear descriptions before you sign.",
+  "proposedName": "TxFort: Security Shield",
   "repository": {
     "type": "git",
     "url": "https://github.com/txfort/txfort-snap.git"
   },
   "source": {
-    "shasum": "6y1zyLV+cdH2oz08qXAW9FH0MLOZdN2FUJEd48OjzIc=",
+    "shasum": "byOVOVCkMS8xEYK4sPKrxyafuz/jNDfJmYR4LSeQ4iw=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",

@@ -7,7 +7,7 @@ import type { OnTransactionHandler } from '@metamask/snaps-sdk';
 import { serializeTransaction, parseGwei } from 'viem';
 
 import { analysisApi } from '../api/client';
-import { getApiKey, updateLastUsed, isAuthenticated } from '../state/storage';
+import { getApiKey, updateLastUsed } from '../state/storage';
 import { caip2ToChainName } from '../utils/chains';
 import {
   buildInsightsPanel,
@@ -152,20 +152,7 @@ export const onTransaction: OnTransactionHandler = async ({
   transactionOrigin,
 }) => {
   try {
-    // Check if user is authenticated
-    const authenticated = await isAuthenticated();
-
-    if (!authenticated) {
-      // Show message to go to txfort.com/metamask
-      return {
-        content: buildErrorPanel(
-          'Account Required',
-          'Connect your MetaMask at txfort.com/metamask to enable transaction insights.',
-        ),
-      };
-    }
-
-    // Get API key
+    // Get API key - this also confirms if the user is authenticated
     const apiKey = await getApiKey();
 
     if (!apiKey) {

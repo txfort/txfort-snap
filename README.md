@@ -1,6 +1,6 @@
-# TxFort MetaMask Snap
+# TxFort: Security Shield
 
-A MetaMask Snap that provides real-time transaction analysis and security insights before you sign transactions.
+Protect your assets with TxFort. A MetaMask Snap that provides real-time transaction analysis and security insights before you sign transactions.
 
 ## Features
 
@@ -11,7 +11,7 @@ A MetaMask Snap that provides real-time transaction analysis and security insigh
 
 ## Installation
 
-Visit [txfort.com](https://txfort.com) and click "Connect with MetaMask" to install the snap.
+Visit [txfort.com](https://txfort.com) and click "MetaMask" to install the snap.
 
 ## Usage
 

@@ -1,5 +1,5 @@
 /**
- * UI Components for Transaction Insights
+ * UI Components for TxFort: Security Shield
  * Builds panel content using MetaMask Snap UI components
  */
 
@@ -221,7 +221,7 @@ export function buildErrorPanel(
  */
 export function buildLoadingPanel(): Component {
   return panel([
-    heading('🔄 TxFort Analysis'),
+    heading('🛡️ TxFort Shield: Analysis'),
     text('Analyzing transaction...'),
   ]);
 }
@@ -231,10 +231,10 @@ export function buildLoadingPanel(): Component {
  */
 export function buildNotAuthPanel(): Component {
   return panel([
-    heading('🔐 TxFort'),
-    text('Sign in to get transaction insights'),
+    heading('🔐 TxFort Shield'),
+    text('Connect your account to enable real-time security analysis.'),
     text(''),
-    text('Use the TxFort dapp to connect your account and enable transaction analysis.'),
+    text('Visit **txfort.com** and click **"MetaMask"** to get started.'),
   ]);
 }
 
