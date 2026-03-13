@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Secure your blockchain interactions with TxFort. Get real-time transaction analysis, safety warnings, and clear descriptions before you sign.",
   "proposedName": "TxFort: Security Shield",
   "repository": {
@@ -7,7 +7,7 @@
     "url": "https://github.com/txfort/txfort-snap.git"
   },
   "source": {
-    "shasum": "byOVOVCkMS8xEYK4sPKrxyafuz/jNDfJmYR4LSeQ4iw=",
+    "shasum": "Kw9QHUASDr8/dwY3ciZ+rG7bIPISDYZ0CGnApeNXs4E=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",

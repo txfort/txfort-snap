@@ -177,7 +177,7 @@ export const onTransaction: OnTransactionHandler = async ({
         tx_hex: txHex,
         chain,
         request_id: requestId,
-        generate_description: false,
+        generate_description: true,
       });
     } catch (apiError: any) {
       console.error('TxFort: API call failed:', apiError?.message);
