@@ -48,7 +48,7 @@
     "viem": "^2.46.3"
   },
   "devDependencies": {
-    "@metamask/snaps-cli": "^6.4.0",
+    "@metamask/snaps-cli": "^8.4.1",
     "@metamask/utils": "^9.1.0",
     "@types/node": "^20.11.0",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
